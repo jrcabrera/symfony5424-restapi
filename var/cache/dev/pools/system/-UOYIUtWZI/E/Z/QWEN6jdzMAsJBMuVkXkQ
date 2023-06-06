@@ -1,0 +1,86 @@
+<?php //request.headers.has%2528%2527Authorization%2527%2529%252F%252Fobject%257Crequest%257Crole_names%257Csubject%257Ctoken%257Ctrust_resolver%257Cuser
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\ExpressionLanguage\\ParsedExpression'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\ParsedExpression')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\GetAttrNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\GetAttrNode')),
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\GetAttrNode'],
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\NameNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\NameNode')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\ArgumentsNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\ArgumentsNode')),
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ArgumentsNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\ExpressionLanguage\\ParsedExpression' => [
+            'nodes' => [
+                $o[1],
+            ],
+        ],
+        'Symfony\\Component\\ExpressionLanguage\\Expression' => [
+            'expression' => [
+                'request.headers.has(\'Authorization\')',
+            ],
+        ],
+        'stdClass' => [
+            'nodes' => [
+                1 => [
+                    'node' => $o[2],
+                    'attribute' => $o[6],
+                    'arguments' => $o[7],
+                ],
+                [
+                    'node' => $o[3],
+                    'attribute' => $o[4],
+                    'arguments' => $o[5],
+                ],
+                7 => [
+                    $o[8],
+                    $o[9],
+                ],
+            ],
+            'attributes' => [
+                1 => [
+                    'type' => 2,
+                ],
+                [
+                    'type' => 1,
+                ],
+                [
+                    'name' => 'request',
+                ],
+                [
+                    'value' => 'headers',
+                ],
+                6 => [
+                    'value' => 'has',
+                ],
+                8 => [
+                    'value' => 0,
+                ],
+                [
+                    'value' => 'Authorization',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode' => [
+            'isIdentifier' => [
+                4 => true,
+                6 => true,
+                8 => false,
+                false,
+            ],
+        ],
+        'Symfony\\Component\\ExpressionLanguage\\Node\\ArrayNode' => [
+            'index' => [
+                5 => -1,
+                7 => 0,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
