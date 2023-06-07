@@ -41,7 +41,7 @@ class TokenAuthenticator extends AbstractAuthenticator
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception): ?Response
     {
         $apiToken = $request->headers->get('Authorization');
-        $continue = intVal(strlen($apiToken)) === 0 ? false : true;
+        $continue = strlen($apiToken) === 0 ? false : true;
         if ($continue) {
             // extract value - begin
             $objTokenExtractor = new HeaderAccessTokenExtractor();
@@ -84,13 +84,13 @@ class TokenAuthenticator extends AbstractAuthenticator
                     return null;
                 } else {
                     $data = [
-                        'message' => 'Authorization is not valid 1'
+                        'message' => 'Authorization is not valid'
                     ];
                     return new JsonResponse($data, Response::HTTP_UNAUTHORIZED);
                 }
             } else {
                 $data = [
-                    'message' => 'Authorization is not valid 2'
+                    'message' => 'Authorization is not valid'
                 ];
                 return new JsonResponse($data, Response::HTTP_UNAUTHORIZED);
             }
