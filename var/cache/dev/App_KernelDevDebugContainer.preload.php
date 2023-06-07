@@ -253,3 +253,9 @@ $classes[] = 'Symfony\Component\HttpKernel\EventListener\StreamedResponseListene
 $classes[] = 'Symfony\Component\HttpKernel\EventListener\ValidateRequestListener';
 
 $preloaded = Preloader::preload($classes);
+
+$classes = [];
+$classes[] = 'Symfony\\Component\\Routing\\Generator\\CompiledUrlGenerator';
+$classes[] = 'Symfony\\Bundle\\FrameworkBundle\\Routing\\RedirectableCompiledUrlMatcher';
+$classes[] = 'Symfony\\Component\\Routing\\Annotation\\Route';
+$preloaded = Preloader::preload($classes, $preloaded);
